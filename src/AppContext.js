@@ -1,8 +1,8 @@
 import React from 'react';
 
 export const defaultAppState = {
-  town: null,
   query: '',
+  town: null,
 };
 
 const AppContext = React.createContext(defaultAppState);
@@ -14,9 +14,7 @@ export function useAppContext() {
 }
 
 function reducer(state, action) {
-  switch (action.type) {
-    default: return state;
-  }
+  return action(state);
 }
 
 export function useAppReducer() {

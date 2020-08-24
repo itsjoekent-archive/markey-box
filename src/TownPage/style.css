@@ -1,0 +1,130 @@
+.town {
+  width: 100%;
+  max-width: 1200px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 96px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.town-title {
+  font-family: museo-sans;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 48px;
+}
+
+.town-title span {
+  display: block;
+  font-family: laca-text;
+  font-weight: bold;
+  font-size: 36px;
+  margin-top: 6px;
+}
+
+.info-group {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 48px;
+}
+
+.info-group:last-of-type {
+  margin-bottom: 0;
+}
+
+.info-group h3 {
+  font-family: museo-sans;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 12px;
+}
+
+.info-group p {
+  font-family: museo-sans;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 18px;
+}
+
+.info-group a {
+  font-family: museo-sans;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--navy);
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+
+.info-group a:hover {
+  color: var(--black);
+}
+
+.town-cover {
+  position: absolute;
+  opacity: 0.1;
+  width: 100vw;
+  top: 166px;
+  left: 25%;
+}
+
+.share {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.share a {
+  margin-right: 16px;
+  margin-bottom: 0;
+}
+
+.share-copy-button {
+  font-family: museo-sans;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--navy);
+  text-transform: uppercase;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.share-copy-button:hover {
+  color: var(--black);
+}
+
+@media (min-width: 768px) {
+  .town {
+    padding-top: 142px;
+    padding-left: 102px;
+  }
+
+  .town-title {
+    font-size: 28px;
+  }
+
+  .town-title span {
+    font-size: 64px;
+  }
+
+  .town-cover {
+    width: 500px;
+    left: 50%;
+    top: 230px;
+  }
+}

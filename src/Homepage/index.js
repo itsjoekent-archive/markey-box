@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from '../Footer';
+import Search from '../Search';
 import './style.css';
 
 export default function Homepage() {
@@ -9,6 +10,7 @@ export default function Homepage() {
         <div className="hero-container">
           <h1 className="hero-title">Ballot drop box finder</h1>
           <p className="hero-subtitle">Find a secure ballot drop box in your community to safely vote for Ed.</p>
+          <Search />
         </div>
       </div>
       <Footer />
