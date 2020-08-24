@@ -63,12 +63,6 @@ export default function TownPage() {
           how drop off your ballot in
           <span>{id}</span>
         </h1>
-        {instructions && (
-          <div className="info-group">
-            <h3>dropbox instructions</h3>
-            <p dangerouslySetInnerHTML={{ __html: urlify(instructions) }} />
-          </div>
-        )}
         <div className="info-group">
           <h3>dropbox address</h3>
           <p>{joinedAddress}</p>
@@ -80,6 +74,12 @@ export default function TownPage() {
             >Google maps directions</a>
           )}
         </div>
+        {instructions && (
+          <div className="info-group">
+            <h3>dropbox instructions</h3>
+            <p dangerouslySetInnerHTML={{ __html: urlify(instructions) }} />
+          </div>
+        )}
         <div className="info-group">
           <h3>share this with your friends & family</h3>
           <p>Make sure everyone you know is able to safely vote early for Ed.</p>
