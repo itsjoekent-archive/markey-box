@@ -9,7 +9,7 @@ export default function Homepage() {
       <div className="hero">
         <div className="hero-container">
           <h1 className="hero-title">Ballot drop box finder</h1>
-          <p className="hero-subtitle">Find a secure ballot drop box in your community to safely vote for Ed.</p>
+          <p className="hero-subtitle">Find a secure ballot drop box in your community to safely vote for Ed Markey.</p>
           <Search />
         </div>
       </div>

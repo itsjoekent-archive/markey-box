@@ -82,7 +82,7 @@ export default function TownPage() {
         )}
         <div className="info-group">
           <h3>share this with your friends & family</h3>
-          <p>Make sure everyone you know is able to safely vote early for Ed.</p>
+          <p>Make sure everyone you know is able to safely vote early for Ed Markey.</p>
           <div className="share">
             <a target="_blank" rel="noopener noreferrer" href={facebookLink}>
               <FacebookIcon />
