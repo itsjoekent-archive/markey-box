@@ -7,6 +7,15 @@ import { ReactComponent as FacebookIcon } from './fb.svg';
 import { ReactComponent as TwitterIcon } from './tw.svg';
 import cover from './cover.jpg';
 
+// FROM: https://stackoverflow.com/a/1500501
+function urlify(text) {
+  var urlRegex = /(https?:\/\/[^\s]+)/g;
+
+  return text.replace(urlRegex, function(url) {
+    return '<a href="' + url + '">' + url + '</a>';
+  });
+}
+
 export default function TownPage() {
   const { town } = useAppContext();
 
@@ -57,7 +66,7 @@ export default function TownPage() {
         {instructions && (
           <div className="info-group">
             <h3>dropbox instructions</h3>
-            <p>{instructions}</p>
+            <p dangerouslySetInnerHTML={{ __html: urlify(instructions) }} />
           </div>
         )}
         <div className="info-group">

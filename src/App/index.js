@@ -23,7 +23,7 @@ function App() {
   React.useEffect(() => {
     const id = getTownSearchQueryValue();
 
-    if (id && (!state.town || state.town.id !== id)) {
+    if (id && !state.town) {
       const town = locationsByTown[id];
 
       if (town) {
