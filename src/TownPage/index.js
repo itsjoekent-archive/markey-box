@@ -34,7 +34,7 @@ export default function TownPage() {
   }
 
   const { address, id, instructions, zip } = town;
-  const joinedAddress = `${address}, ${zip}`;
+  const joinedAddress = `${address.trim()}${zip ? `, ${zip}` : ''}`;
 
   const joinedAddressLowercase = joinedAddress.toLowerCase();
   const hideMaps = joinedAddressLowercase.includes('location 1') ||
