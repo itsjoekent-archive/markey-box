@@ -12,7 +12,7 @@ export default function Footer() {
         <p className="footnote">This directory will be updated frequently. Please use this tool to search for the location of the ballot drop boxes in your community.  You can only drop off your ballot in a dropbox in your own community. You can also return your completed ballot at the designated early vote times and locations in your community, which can be found <a href="https://www.sec.state.ma.us/EarlyVotingWeb/EarlyVotingSearch.aspx">here</a>.</p>
         <p className="footnote">If you have more question about voting, visit <a href="https://edmarkey.com/vote">edmarkey.com/vote</a>. Voter helpdesk: vote@edmarkey.org, Voter protection hotline: (774) 202-9178</p>
       </div>
-      <span className="disclaimer">paid for by the markey campaign</span>
+      <span className="disclaimer">paid for by the markey committee</span>
     </footer>
   );
 }
