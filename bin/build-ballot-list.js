@@ -31,7 +31,7 @@ function formatZip(input) {
     results.shift();
 
     const data = results.map((row) => [
-      formatTown(row[0]), row[1], row[2], formatZip(row[5]),
+      formatTown(row[0]), row[1], row[2], formatZip(row[6]),
     ]);
 
     await fs.writeFile(join(__dirname, '../src/data.json'), JSON.stringify(data));
