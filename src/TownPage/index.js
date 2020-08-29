@@ -60,7 +60,7 @@ export default function TownPage() {
     <React.Fragment>
       <div className="town">
         <h1 className="town-title">
-          how drop off your ballot in
+          how to drop off your ballot in
           <span>{id}</span>
         </h1>
         <div className="info-group">
