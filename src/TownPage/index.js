@@ -35,6 +35,7 @@ export default function TownPage() {
 
   const { address, id, instructions, zip } = town;
   const joinedAddress = `${address.trim()}${zip ? `, ${zip}` : ''}`;
+  const mapAddress = `${address.trim()}, ${id}${zip ? `, ${zip}` : ''}`;
 
   const joinedAddressLowercase = joinedAddress.toLowerCase();
   const hideMaps = joinedAddressLowercase.includes('location 1') ||
@@ -70,7 +71,7 @@ export default function TownPage() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(joinedAddress)}`}
+              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapAddress)}`}
             >Google maps directions</a>
           )}
         </div>
