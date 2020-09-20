@@ -30,6 +30,10 @@ function formatZip(input) {
 
     results.shift();
 
+    // 0 = City/Town
+    // 1 = Address
+    // 2 = Instructions
+    // 3 = Zip
     const data = results.map((row) => [
       formatTown(row[0]), row[1], row[2], formatZip(row[8]),
     ]);
