@@ -65,6 +65,7 @@ export default function Search(props) {
             aria-label="Enter your city or town"
             placeholder="e.g., “Cambridge”"
             className="search-input"
+            autoComplete="off"
             value={query}
             onChange={onChange}
             onFocus={() => setIsFocused(true)}
